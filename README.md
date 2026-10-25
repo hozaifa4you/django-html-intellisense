@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/logo.png" alt="Django HTML IntelliSense logo" width="128">
+  <img src="assets/logo.png" alt="Django HTML IntelliSense logo" width="50">
 </p>
 
 <h1 align="center">Django HTML IntelliSense</h1>
