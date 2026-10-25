@@ -41,24 +41,26 @@ In any `django-html` file you get:
 - **Auto quotes.** `class=` becomes `class=""`.
 - **Hover docs** for elements and attributes, with MDN links.
 - **Embedded CSS and JavaScript** IntelliSense inside `<style>` and `<script>`.
+- **Emmet.** `div.card>p` expands to full HTML, with nothing to set up.
+
+All of this works as soon as the extension is installed; there is nothing to configure.
 
 ## Requirements
 
 You need an extension that provides the `django-html` language. For example, [Django](https://marketplace.visualstudio.com/items?itemName=batisteo.vscode-django) by Baptiste Darthenay provides the language, highlighting and snippets.
 
-## Recommended settings
+## Settings it sets for you
 
-To expand Emmet abbreviations (`div.card>p`) in templates, add this to your settings:
+The extension ships these as defaults, so your own settings always win:
 
-```json
-"emmet.includeLanguages": {
-  "django-html": "html"
-}
-```
+- `emmet.includeLanguages`: `"django-html": "html"`, for Emmet in templates.
+- `[django-html]`: suggestions open inside attribute values (`editor.quickSuggestions`), and accepting one replaces the word under the cursor (`editor.suggest.insertMode`), as in plain HTML files.
+
+If you already set `emmet.includeLanguages` yourself, your value replaces the default. Add `"django-html": "html"` to it to keep Emmet in templates.
 
 ## Notes
 
-- If you use the **Auto Close Tag** extension and added `django-html` to `auto-close-tag.activationOnLanguage`, remove it. With both, every closing tag is inserted twice.
+- If the **Auto Close Tag** extension also runs in Django templates, every closing tag is inserted twice. The extension notices this when a template opens, and offers to turn Auto Close Tag off for `django-html`.
 - The HTML language server reads `{% %}` and `{{ }}` as plain text. Suggestions inside a template tag, such as `<div {% if x %}class="a"{% endif %}>`, can be less accurate than in plain HTML.
 - The HTML formatter is offered for `django-html` files too. If you format templates with djLint or another tool, set it as the default formatter for `[django-html]`.
 
@@ -66,7 +68,7 @@ To expand Emmet abbreviations (`div.card>p`) in templates, add this to your sett
 
 The built-in HTML language features extension lets other extensions add languages through the `htmlLanguageParticipants` contribution point. This extension adds `django-html` with `autoInsert` turned on. When a Django template opens, it also activates the built-in HTML extension, which on its own only starts for `html` and `handlebars` files.
 
-The extension runs no language server of its own and needs no configuration.
+The Emmet and suggestion settings are contributed as configuration defaults. The extension runs no language server of its own.
 
 ## License
 
