@@ -1,4 +1,28 @@
-# Django HTML IntelliSense
+<p align="center">
+  <img src="assets/logo.png" alt="Django HTML IntelliSense logo" width="128">
+</p>
+
+<h1 align="center">Django HTML IntelliSense</h1>
+
+<p align="center">
+  <a href="https://marketplace.visualstudio.com/items?itemName=hozaifabinmasud.django-html-intellisense">
+    <img src="https://img.shields.io/visual-studio-marketplace/v/hozaifabinmasud.django-html-intellisense?label=VS%20Code%20Marketplace" alt="VS Code Marketplace version">
+  </a>
+  <a href="https://github.com/hozaifa4you/django-html-intellisense/actions/workflows/ci.yml">
+    <img src="https://github.com/hozaifa4you/django-html-intellisense/actions/workflows/ci.yml/badge.svg" alt="CI status">
+  </a>
+  <a href="https://github.com/hozaifa4you/django-html-intellisense/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/hozaifa4you/django-html-intellisense" alt="MIT License">
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://marketplace.visualstudio.com/items?itemName=hozaifabinmasud.django-html-intellisense">Install from Marketplace</a>
+  ·
+  <a href="https://github.com/hozaifa4you/django-html-intellisense">GitHub repository</a>
+  ·
+  <a href="https://github.com/hozaifa4you/django-html-intellisense/issues">Report an issue</a>
+</p>
 
 Get VS Code's full HTML IntelliSense in Django templates, and keep Django syntax highlighting.
 
