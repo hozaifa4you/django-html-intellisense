@@ -44,6 +44,7 @@
     ]
   },
   "scripts": {
+    "test": "node --check extension.js",
     "package": "vsce package",
     "publish": "vsce publish"
   },
