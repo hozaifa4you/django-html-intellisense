@@ -5,7 +5,9 @@
   "version": "1.1.0",
   "publisher": "hozaifabinmasud",
   "author": {
-    "name": "Hozaifa B. Masud"
+    "name": "Hozaifa B. Masud",
+    "url": "https://hozaifabinmasud.vercel.app",
+    "email": "hozaifa4you@gmail.com"
   },
   "license": "MIT",
   "icon": "assets/logo.png",
