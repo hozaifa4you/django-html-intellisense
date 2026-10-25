@@ -2,12 +2,13 @@
   "name": "django-html-intellisense",
   "displayName": "Django HTML IntelliSense",
   "description": "Full HTML IntelliSense (tags, attributes, values, hover, auto-close) in Django templates, without losing Django syntax highlighting.",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "publisher": "hozaifabinmasud",
   "author": {
     "name": "Hozaifa B. Masud"
   },
   "license": "MIT",
+  "icon": "assets/logo.png",
   "repository": {
     "type": "git",
     "url": "https://github.com/hozaifa4you/django-html-intellisense"
