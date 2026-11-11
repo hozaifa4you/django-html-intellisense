@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "permissions": {
+    "allow": [
+      "Bash(npm test *)",
+      "Bash(node --test *)",
+      "Bash(npm run package)",
+      "Bash(npx vsce ls *)",
+      "PowerShell(npm test *)",
+      "PowerShell(node --test *)",
+      "PowerShell(npm run package)",
+      "PowerShell(npx vsce ls *)"
+    ],
+    "ask": [
+      "Bash(npm run publish *)",
+      "Bash(npx vsce publish *)",
+      "Bash(vsce publish *)",
+      "Bash(npm publish *)",
+      "PowerShell(npm run publish *)",
+      "PowerShell(npx vsce publish *)",
+      "PowerShell(vsce publish *)",
+      "PowerShell(npm publish *)"
+    ]
+  }
+}

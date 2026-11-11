@@ -5,3 +5,6 @@ test/**
 package-lock.json
 node_modules/**
 *.vsix
+CLAUDE.md
+CLAUDE.local.md
+.claude/**
